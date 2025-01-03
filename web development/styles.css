@@ -1,0 +1,159 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+/* Header Styling */
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e2e2e2;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #333;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+section p {
+    font-size: 1.1em;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+pre {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code {
+    display: block;
+    white-space: pre-wrap;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.details {
+    background: #f9f9f9;
+    border-left: 5px solid #007bff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.details h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.details ul li {
+    margin-bottom: 10px;
+}
+
+.details ul li strong {
+    color: #007bff;
+}
+
+/* Footer Styling */
+footer {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+/* Footer Hide Class */
+footer.hidden {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

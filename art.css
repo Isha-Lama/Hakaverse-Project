@@ -1,0 +1,202 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    position: relative; /* Ensure body is relative to contain sticky elements */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-image: linear-gradient(150deg, #EBF3F5, #4ca9d7); /* Gradient colors */
+    color: #4a4a4a; /* White text color for better contrast */
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left-nav, .right-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.left-nav li, .right-nav li {
+    margin: 0 15px; /* Adjust margin to accommodate larger text */
+}
+
+.left-nav li a, .right-nav li a {
+    text-decoration: none;
+    color: #3b3b3b; /* White text color for better contrast */
+    font-weight: bold;
+    font-size: 1.2rem; /* Larger text size */
+    padding: 5px 0; /* Adds some vertical padding to accommodate the underline */
+    transition: color 1s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent; /* Initial transparent border */
+}
+
+.left-nav li a:hover, .right-nav li a:hover {
+    color: #030303; /* Slightly darker color on hover */
+    border-bottom: 2px solid #4a4a4a; /* Adds a bottom line on hover */
+}
+
+.right-nav {
+    margin-left: auto; /* Pushes the right-nav items to the far right */
+}
+
+
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #333;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+section p {
+    font-size: 1.1em;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.details {
+    background: #f9f9f9;
+    border-left: 5px solid #007bff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.details h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.details ul li {
+    margin-bottom: 10px;
+}
+
+.details ul li strong {
+    color: #007bff;
+}
+
+.leftt {
+    text-align: left;
+    color: #592020; /* Adjust text color if needed */
+}
+
+.dg1 {
+    width: 100rem; /* Adjust width as needed */
+    height:210px;
+}
+
+/* Footer Styling */
+footer {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translateY(0); /* Footer is visible by default */
+    opacity: 1; /* Footer is visible by default */
+}
+
+/* Footer Hidden Class */
+footer.hidden {
+    transform: translateY(100%); /* Hide footer off-screen */
+    opacity: 0; /* Hide footer */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+.hidden {
+    display: none;
+}
+.profile-dashboard {
+    display: none;
+    position: absolute;
+    top: 120px; /* Adjust this value as needed */
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.profile-dashboard.active {
+    display: block;
+    margin-right: 7.%;
+}
+
+.profile-dashboard ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-dashboard li {
+    margin-bottom: 10px;
+}
+
+.profile-dashboard a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.profile-dashboard a:hover {
+    color: #0056b3;
+}

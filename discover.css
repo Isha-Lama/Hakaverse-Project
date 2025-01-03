@@ -1,0 +1,488 @@
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    /* background-color: #ccd5dc; */
+    background-image: linear-gradient(45deg, #EBF3F5, #C5E2F0);
+}
+
+
+
+header {
+    background-image: linear-gradient( 165deg, #9bd9ff, #3691ca); /* Dark background color */
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .nav-bar {
+    margin-top: 10px;
+}
+
+header .nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header .nav-bar ul li {
+    display: inline;
+    margin: 0 10px;
+    position: relative;
+}
+
+header .nav-bar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 0;
+    position: relative;
+}
+
+header .nav-bar ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.4s, color 0.4s;
+}
+
+header .nav-bar ul li a:hover {
+    color: #fff;
+}
+
+header .nav-bar ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.main {
+    padding: 20px;
+}
+
+/* General reset for better styling control */
+body, h1, h3, p, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the discover section */
+/* .discover {
+    background-image:url(images/back1.jpg);
+    padding: 50px 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; 
+} */
+
+.discover {
+    position: relative;
+    padding: 0; /* Remove padding to avoid gaps */
+    margin: 0; /* Remove margin to avoid gaps */
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center;
+    width: 90%; /* Ensure full width */
+    height: 80vh; /* Ensure full viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    overflow: hidden;
+}
+
+
+.discover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("disc.png");
+    background-size: cover;
+    background-position: calc(100% + 15em) center; /* Moves the image 20px to the right */ /* Adjusts the image position */
+    /* Adjust opacity for transparency (0 is fully transparent, 1 is fully opaque) */
+    z-index: -1; /* Place it behind the content */
+}
+
+
+
+/* Ensure .discover content is visible and not affected by the background opacity */
+.discover .intro {
+    max-width: 800px;
+    text-align: left;
+    
+    position: relative; /* To keep the text above the pseudo-element */
+}
+
+
+.discover h1 {
+    font-size: 70px;
+    color: #333;
+    margin-left: 5%;
+}
+
+.discover h3 {
+    font-size: 1.25rem;
+    color: #666;
+    margin-left: 5%; /* Remove margin-left */
+}
+
+/* featured courses */
+
+
+
+.discover-learning {
+    /* background: url('images/back3.png') no-repeat center center; */
+    background-size: cover; /* Ensures the background image covers the entire element */
+    width: 100%; /* Ensures the element takes up the full width */
+    height: 100vh; /* Ensures the element takes up the full viewport height */
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes any default padding */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+
+
+.container{
+    width:90%;
+    padding: 50px;
+    margin: 53px auto ;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* .text{
+    position: relative;
+} */
+
+.text .logo {
+    margin-top: 15%;
+    margin-left: 85%; /* Increase this value to move the logo towards the right */
+    width: 40px; /* Set the desired width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.section2{
+    background-image: url("art.png");
+    background-size: right 10em ;
+    margin-left: 90%;
+}
+.topic{
+    position: relative;
+}
+
+.topic h2 {
+    margin-left: 10%;
+    font-size: 60px;
+    text-align: center;
+    color: #4f4e4e;
+    position: relative;
+    top:50px;
+    /* margin-top:25px; */
+}
+
+
+.topic h3 {
+    margin-left: 9.3%;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    color: #736666;
+    margin-top: 10px; /* Increase this value to move h3 upwards */
+}
+
+.bigbox{
+    width: 360px;
+    height:430px;
+    background:linear-gradient(to bottom,#8DD8F2,#3792B1);
+    margin: 0px 20px;
+    transition:0.5s;
+    padding:0.5%;
+    border-radius: 15px;
+    transition: 0.5s;
+
+   }
+
+.bigbox:hover{
+        transform:scale(1.1) ;
+        background:linear-gradient(to bottom,#8DD8F2,#3792B1);
+}
+
+.sbox {
+    height: 60%; /* Adjust height to make the image container smaller */
+    left: 4%;
+    width: 90%; /* Adjust width if needed */
+    top: 5%; /* Adjust top position if needed */
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.sbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire sbox while maintaining aspect ratio */
+    border-radius: 15px; /* Ensure the image also respects the border-radius */
+}
+
+.text .text1 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-top: -70px; /* Adjust margin-top to position text a little lower */
+}
+
+.text .text2 {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: medium;
+    margin-left: 5%;
+    margin-top: 10px; /* Adjust margin-top to position text a little lower */
+}
+
+.section2 .topic h2{
+    margin-left: 10%;
+    font-size: 50px;
+    text-align: start;
+    color: #4f4e4e;
+    position: relative;
+    top:200px;
+}
+.section2 .topic h3{
+    margin-left: 9.3%;
+    font-size: 30px;
+    text-align: start;
+    position: relative;
+    top: 190px;
+    color: #736666;
+    margin-top: 10px;
+}
+
+.showmore {
+    margin-top: 13%;
+    margin-left: 13%;
+    padding: 10px 20px; /* Adjust padding for better button size */
+    color: #ffffff; /* Text color */
+    background-color: #467cc0; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text inside the button */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    bottom: 75px; /* Position the button above the bottom of the parent div */
+     /* Center the button horizontally */
+    transform: translateX(-50%); /* Offset by half the button width to center it */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for background color and transform */
+    
+}
+
+.showmore:hover {
+    background-color: #9fd09f; /* Darker background color on hover */
+    transform: translateX(-50%) scale(1.2); /* Slightly enlarge the button on hover */
+    color:brown;
+}
+.bigbox .startnow{
+    padding: 10px 5px;
+    color: #fff;
+    background-color: #00397f;
+    text-decoration: none;
+    border-radius: 6px;
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+    width: 40%;
+    margin-left: 25%;
+}
+
+.bigbox:hover .startnow{
+    background-color:#007b77;
+    color: #ffffff;
+    font-weight: medium;
+}
+
+
+
+
+
+
+
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+
+.section2 {
+    /* background: url('images/back3.jpg') no-repeat center center; */
+    background-size: cover; /* Ensures the background image covers the entire element */
+    width: 100%; /* Ensures the element takes up the full width */
+    height: 100vh; /* Ensures the element takes up the full viewport height */
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes any default padding */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .intro {
+        padding: 40px 10px;
+    }
+
+    .course-item, .path-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .course-item img, .path-item img {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 50px;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .features, .learning-paths {
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .text .logo {
+        margin-left: 82.5%;
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .text .logo {
+        margin-left: 35%;
+        margin-top: 20%;
+    }}
+
+    @media (max-width: 768px) {
+        .text .text2 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .text .text2 {
+            display: none;
+        }
+    }
+
+
+    @media (max-width: 1200px) {
+    .text .text1 {
+        font-size: 20px;
+        color: #534d4d;
+        font-weight: bold;
+        margin-left: 2%;
+        margin-top: -50px; /* Adjust margin-top to position text a little lower */
+    }}
+
+    @media (max-width: 1200px) {
+        .bigbox {
+            width: 300px;
+            height: 360px;
+            margin: -70px 15px;
+        }
+    }
+
+    .profile-dashboard {
+    display: none;
+    position: absolute;
+    top: 70px; /* Adjust this value as needed */
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.profile-dashboard.active {
+    display: block;
+    margin-top: 1%;
+    margin-right: 34.5%;
+}
+
+.profile-dashboard ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-dashboard li {
+    margin-bottom: 10px;
+    
+}
+
+.profile-dashboard a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.profile-dashboard a:hover {
+    color: #0056b3;
+}
+

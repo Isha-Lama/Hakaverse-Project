@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Art</title>
+    <link rel="stylesheet" href="art.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script async data-id="7779382534" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+    <header>
+        <h1>Digital Art</h1>
+        <nav>
+            <ul class="left-nav">
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#techniques">Techniques</a></li>
+                <li><a href="#styles">Styles</a></li>
+                <li><a href="#artists">Famous Artists</a></li>
+                <li><a href="#ethics">Ethics and Copyright</a></li>
+                <li><a href="#future">Future Trends</a></li>
+            </ul>
+            <ul class="right-nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="/quad team/quiz sample/test.html">Test</a></li>
+                <li><a href="/quad team/discover.html">Services</a></li>
+                <li><a href="#" onclick="toggleDashboard()"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section id="intro">
+            <h2>Introduction to Digital Art</h2>
+            <p>Digital art refers to artistic work or practice that uses digital technology as part of the creative or presentation process.</p>
+            <img class="dg1" src="/Imageshck/digitalart.jpg" alt="Introduction to Digital Art">
+        </section>
+
+        <section id="tools">
+            <h2>Tools for Digital Art</h2>
+            <p>Various software tools are used for creating digital art, including Adobe Photoshop, Corel Painter, Procreate, and more.</p>
+            <div class="tool-example">
+                <h3>Photoshop Example:</h3>
+                <pre><code>// Example code for creating a new document in Photoshop
+var docRef = app.documents.add(800, 600, 72, "My Artwork");
+</code></pre>
+                <h3>Procreate Example:</h3>
+                <pre><code>// Example steps for creating a new canvas in Procreate
+1. Open Procreate.
+2. Tap the '+' icon.
+3. Choose a canvas size or create a custom one.
+</code></pre>
+            </div>
+        </section>
+
+        <section id="techniques">
+            <h2>Digital Art Techniques</h2>
+            <p>Techniques in digital art include digital painting, vector art, 3D modeling, and photo manipulation.</p>
+            <img src="/Imageshck/digital_art_techniques.png" alt="Digital Art Techniques">
+        </section>
+
+        <section id="styles">
+            <h2>Digital Art Styles</h2>
+            <p>Various styles are prominent in digital art, such as realism, abstract, fantasy, and concept art.</p>
+            <p class="leftt">Digital art encompasses diverse styles adapted to digital tools, such as digital painting simulating traditional media like oils or watercolors in software such as Adobe Photoshop. Vector art employs mathematical formulas for scalable, precise graphics ideal for logos and illustrations using programs like Adobe Illustrator. Pixel art, rooted in early video games, employs grid-based designs and limited color palettes to evoke nostalgia or minimalist aesthetics. 3D art utilizes software like Blender or Autodesk Maya to create three-dimensional models, textures, and animations for games, films, or digital installations.</p>
+            <img src="/Imageshck/digital_art_styles.jpg" alt="Digital Art Styles">
+        </section>
+
+        <section id="artists">
+            <h2>Famous Digital Artists</h2>
+            <p>Notable digital artists include Beeple, Loish, and Sakimi Chan, who have made significant contributions to the field.</p>
+            <p class="leftt">
+                Digital artists leverage technology and software to create artworks ranging from digital paintings and illustrations to 3D models and animations. They often blend traditional artistic skills with digital tools to explore new creative possibilities. Digital artists can work across various mediums, including vector graphics, pixel art, and digital collage, adapting techniques to suit their artistic vision. Their work is characterized by precision, versatility, and the ability to manipulate digital elements to evoke emotions and tell stories effectively. As pioneers of modern art forms, digital artists continue to push boundaries and redefine artistic expression in the digital age.</p>
+            <img src="/Imageshck/artist.png" alt="Famous Digital Artists">
+        </section>
+
+        <section id="ethics">
+            <h2>Ethics and Copyright in Digital Art</h2>
+            <p class="leftt">Ethical considerations in digital art include copyright issues, plagiarism, and the fair use of digital content. <br><br><br>
+               1. Copyright and Intellectual Property: Always credit original creators and avoid unauthorized use of others' work. <br>
+2.Plagiarism: Do not present others’ work as your own; always provide proper attribution. <br>
+3.Fair Use: Understand and apply the fair use doctrine cautiously, especially for transformative uses. <br>
+4.Privacy and Consent: Obtain consent for using images of recognizable individuals and ensure ethical representation. <br>
+            Copyright and Intellectual Property:
+
+Always credit original creators and avoid unauthorized use of others' work.</p>
+            <!-- <img src="digital_art_ethics.png" alt="Ethics and Copyright"> -->
+        </section>
+
+        <section id="future">
+            <h2>Future Trends in Digital Art</h2>
+            <p class="leftt">1. AI Art Generation: Artificial intelligence is revolutionizing digital art by creating innovative and unique pieces, allowing artists to explore new creative possibilities.
+                <br>2. Virtual Reality (VR): VR is enhancing the immersive experience of digital art, enabling viewers to interact with art in a three-dimensional space.
+                <br>3. Augmented Reality (AR): AR integrates digital art with the physical world, allowing users to view and interact with art through their devices in real-world environments.
+               <br>4. Blockchain and NFTs: Blockchain technology and non-fungible tokens (NFTs) are providing new ways to authenticate, sell, and trade digital art, giving artists more control over their work.
+               <br>5. Generative Art: Generative algorithms and software are creating art through automated processes, allowing for unique and unpredictable artistic outputs.</p>
+            <img src="/Imageshck/future.jpg" alt="Future Trends in Digital Art">
+        </section>
+    </main>
+
+    <footer>
+        <script>
+            let lastScrollTop = 0;
+            const footer = document.querySelector('footer');
+    
+            window.addEventListener('scroll', function() {
+                let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+                if (currentScroll > lastScrollTop) {
+                    // Scrolling down
+                    footer.classList.add('hidden');
+                } else {
+                    // Scrolling up or at the top
+                    footer.classList.remove('hidden');
+                }
+    
+                lastScrollTop = currentScroll; // Update lastScrollTop
+            });
+        </script>
+        
+        <p>&copy; 2024 Digital Art Essentials. All rights reserved.</p>
+    </footer>
+
+<div class="profile-dashboard">
+    <ul>
+        <li><a href="/quad team/dashboard/dash.html">Profile</a></li>
+        <li><a href="#">Logout</a></li>
+    </ul>
+</div>
+
+<script>
+function toggleDashboard() {
+    const dashboard = document.querySelector('.profile-dashboard');
+    const isActive = dashboard.classList.contains('active');
+    
+    // Close all open dashboards
+    document.querySelectorAll('.profile-dashboard').forEach(d => d.classList.remove('active'));
+    
+    // Toggle the clicked dashboard
+    if (!isActive) {
+        dashboard.classList.add('active');
+    } else {
+        dashboard.classList.remove('active');
+    }
+}
+
+// Close the dashboard when clicking outside
+document.addEventListener('click', function(event) {
+    const dashboard = document.querySelector('.profile-dashboard');
+    const profileIcon = document.querySelector('.nav-bar li a i.fa-user');
+
+    if (!profileIcon.contains(event.target) && !dashboard.contains(event.target)) {
+        dashboard.classList.remove('active');
+    }
+});
+
+function showMore() {
+            const hiddenBoxes = document.querySelectorAll('.bigbox.hidden');
+            hiddenBoxes.forEach(box => {
+                box.classList.remove('hidden');
+            });
+            document.getElementById('showMoreBtn').style.display = 'none';
+        }
+
+
+
+</script>
+</body>
+</html>

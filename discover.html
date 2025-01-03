@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Learning</title>
+    <link rel="stylesheet" href="discover.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script async data-id="7779382534" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+    
+    <header>
+        <div class="logo">Discover Learning</div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="quiz sample/test.html">Aptitude Test</a></li>
+                <li><a href="#" onclick="toggleDashboard()"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="discover">
+            <div class="intro">
+            <h1>Discover Learning</h1>
+            <h3>"Explore a world of knowledge with our expertly curated courses <br> and personalized learning paths designed to help you achieve your goals."</h3>
+            <!-- <a href="#paths" class="btn-primary">Find Your Path</a> -->
+        </div>
+    </div>
+
+
+
+    <div class="discover-learning">
+        <div class="topic">
+        <h2> Information Technology</h2>
+        <h3>"Unlocking the Power of Information Technology: A Comprehensive Guide"</h3>
+    </div>
+        <div class="container">
+        <div class="bigbox">
+            <div class="sbox">
+                <img src="/Imageshck/data.jpg" alt="img">
+            </div>
+
+            <div class="text">
+                <img class="logo" src="logos/logo1.png" alt="Logo">
+                <div class="text1">Data Science Essentials</div>
+                <div class="text2">Learn the fundamentals of data science <br> including data analysis, visualization <br> and machine learning.</div>
+            </div>
+
+            <a class="startnow" href="data.html">Start Now!</a>
+            
+        </div>
+    
+
+        <div class="bigbox">
+            <div class="sbox">
+                <img src="/Imageshck/web.jpg" alt="img">
+            </div>
+
+            <div class="text">
+                <img class="logo" src="logos/logo2.png" alt="Logo">
+                <div class="text1">Web Development Bootcamp</div>
+                <div class="text2">Master the skills needed to build modern <br>websites using Html,css and <br> javascript.</div>
+            </div>
+
+            <a class="startnow" href="/quad team/web development/index.html">Start Now!</a>
+            
+        </div>
+
+        <div class="bigbox">
+            <div class="sbox">
+                <img src="/Imageshck/marketing.jpg" alt="img">
+            </div>
+
+            <div class="text">
+                <img class="logo" src="logos/logo3.png" alt="Logo">
+                <div class="text1">Digital Marketing Mastery</div>
+                <div class="text2">Explore digital marketing strategies <br>including SEO,PPC and social media <br>marketing.</div>
+            </div>
+
+            <a class="startnow" href="digital.html">Start Now!</a>
+            
+        </div>
+
+    </div>
+</div>
+        
+        
+
+<!-- section 2     ------- -->
+
+<div class="section2">
+    
+<div class="topic">
+<h2> ARTS</h2>
+<h3>"Unlock Your Potential  with <br>Our Top Picks"</h3>
+<a href="art.html"><button class="showmore">Show More</button></a>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Discover Learning. All rights reserved.</p>
+    </footer>
+</body>
+<div class="profile-dashboard">
+    <ul>
+        <li><a href="dashboard/dash.html">Profile</a></li>
+        <li><a href="#">Logout</a></li>
+    </ul>
+</div>
+<script>
+function toggleDashboard() {
+    const dashboard = document.querySelector('.profile-dashboard');
+    const isActive = dashboard.classList.contains('active');
+    
+    // Close all open dashboards
+    document.querySelectorAll('.profile-dashboard').forEach(d => d.classList.remove('active'));
+    
+    // Toggle the clicked dashboard
+    if (!isActive) {
+        dashboard.classList.add('active');
+    } else {
+        dashboard.classList.remove('active');
+    }
+}
+
+// Close the dashboard when clicking outside
+document.addEventListener('click', function(event) {
+    const dashboard = document.querySelector('.profile-dashboard');
+    const profileIcon = document.querySelector('.nav-bar li a i.fa-user');
+
+    if (!profileIcon.contains(event.target) && !dashboard.contains(event.target)) {
+        dashboard.classList.remove('active');
+    }
+});
+
+function showMore() {
+            const hiddenBoxes = document.querySelectorAll('.bigbox.hidden');
+            hiddenBoxes.forEach(box => {
+                box.classList.remove('hidden');
+            });
+            document.getElementById('showMoreBtn').style.display = 'none';
+        }
+
+
+
+</script>
+
+
+
+
+
+
+</html>

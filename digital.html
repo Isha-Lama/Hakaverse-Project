@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Mastery</title>
+    <link rel="stylesheet" href="digital.css">
+</head>
+<body>
+    <header>
+        <h1>Digital Marketing Mastery</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#seo">SEO</a></li>
+                <li><a href="#ppc">PPC</a></li>
+                <li><a href="#social-media">Social Media Marketing</a></li>
+                <li><a href="#email">Email Marketing</a></li>
+                <li><a href="#content">Content Marketing</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="overview">
+            <h2>Digital Marketing Overview</h2>
+            <p>Digital marketing involves leveraging online platforms and tools to reach and engage with customers. It includes various channels and tactics to promote products or services, drive traffic, and convert leads.</p>
+            <img src="/Imageshck/digital_marketing_overview.png" alt="Digital Marketing Overview">
+        </section>
+
+        <section id="seo">
+            <h2>Search Engine Optimization (SEO)</h2>
+            <p>SEO is the process of optimizing a website to rank higher in search engine results pages (SERPs). Effective SEO improves visibility and attracts organic traffic.</p>
+            <img src="/Imageshck/seo.png" alt="SEO">
+            <div class="details">
+                <h3>Key Components:</h3>
+                <ul>
+                    <li><strong>Keyword Research:</strong> Identifying relevant keywords.</li>
+                    <li><strong>On-Page Optimization:</strong> Enhancing individual web pages.</li>
+                    <li><strong>Off-Page Optimization:</strong> Building authority through backlinks.</li>
+                    <li><strong>Technical SEO:</strong> Improving technical aspects like site speed.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="ppc">
+            <h2>Pay-Per-Click (PPC) Advertising</h2>
+            <p>PPC is an online advertising model where advertisers pay each time a user clicks on their ads. It includes various platforms like Google Ads and Bing Ads.</p>
+            <img src="/Imageshck/ppc.png" alt="PPC">
+            <div class="details">
+                <h3>Key Components:</h3>
+                <ul>
+                    <li><strong>Campaign Creation:</strong> Setting up ad campaigns.</li>
+                    <li><strong>Bid Management:</strong> Managing bids for cost-effective ad placement.</li>
+                    <li><strong>Ad Extensions:</strong> Using additional features like site links.</li>
+                    <li><strong>Analytics and Reporting:</strong> Tracking ad performance.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="social-media">
+            <h2>Social Media Marketing</h2>
+            <p>Social media marketing involves using platforms like Facebook, Twitter, LinkedIn, Instagram, and others to promote products or services and engage with customers.</p>
+            <img src="/Imageshck/social_media_marketing.png" alt="Social Media Marketing">
+            <div class="details">
+                <h3>Key Components:</h3>
+                <ul>
+                    <li><strong>Content Creation:</strong> Developing engaging content.</li>
+                    <li><strong>Audience Engagement:</strong> Interacting with followers.</li>
+                    <li><strong>Advertising:</strong> Running paid social media campaigns.</li>
+                    <li><strong>Analytics:</strong> Measuring social media performance.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="email">
+            <h2>Email Marketing</h2>
+            <p>Email marketing involves sending targeted emails to prospects and customers to build relationships and drive conversions.</p>
+            <img src="/Imageshck/email_marketing.png" alt="Email Marketing">
+            <div class="details">
+                <h3>Key Components:</h3>
+                <ul>
+                    <li><strong>List Building:</strong> Growing and maintaining an email list.</li>
+                    <li><strong>Campaign Creation:</strong> Designing and sending email campaigns.</li>
+                    <li><strong>Automation:</strong> Setting up automated email sequences.</li>
+                    <li><strong>Analytics:</strong> Tracking open rates and conversions.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="content">
+            <h2>Content Marketing</h2>
+            <p>Content marketing focuses on creating valuable content to attract and retain an audience. It includes blog posts, videos, infographics, and more.</p>
+            <img src="/Imageshck/content_marketing.png" alt="Content Marketing">
+            <div class="details">
+                <h3>Key Components:</h3>
+                <ul>
+                    <li><strong>Content Strategy:</strong> Planning and creating content.</li>
+                    <li><strong>Distribution:</strong> Sharing content across channels.</li>
+                    <li><strong>Engagement:</strong> Encouraging interaction with content.</li>
+                    <li><strong>Measurement:</strong> Analyzing content performance.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="analytics">
+            <h2>Analytics and Reporting</h2>
+            <p>Analytics and reporting involve measuring and analyzing the performance of digital marketing efforts to understand effectiveness and make data-driven decisions.</p>
+            <img src="/Imageshck/analytics.png" alt="Analytics">
+            <div class="details">
+                <h3>Key Components:</h3>
+                <ul>
+                    <li><strong>Google Analytics:</strong> Tracking website traffic.</li>
+                    <li><strong>Performance Metrics:</strong> Monitoring KPIs like traffic sources.</li>
+                    <li><strong>Reporting Tools:</strong> Creating reports and visualizing data.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <script>
+            let lastScrollTop = 0;
+            const footer = document.querySelector('footer');
+        
+            window.addEventListener('scroll', function() {
+                let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        
+                // Always hide the footer on scroll (up or down)
+                footer.classList.add('hide');
+        
+                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+            });
+        </script>
+        
+        <p>&copy; 2024 Digital Marketing Mastery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
